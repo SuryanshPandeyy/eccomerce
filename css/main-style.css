@@ -6,22 +6,14 @@
 .body.color{
 	background: grey;
 }
-.header {
-	width: 100%;
-	height: fit-content;
-}
-.settings{
-	font-size: 50px;
-	margin: 0 20px;
-}
-@media only screen and (max-width:550px){
-	.settings{
-		font-size: 30px;
-	}
+
+.settings-icon{
+	font-size: 40px;
+	margin: 10px 20px;
 }
 
+
 .bi-gear{
-	float: left;
 	transition: all 0.2s linear;
 }
 
@@ -34,8 +26,6 @@
 .bi-person-circle{
 	float:right;
 }
-
-
 
 .container-box{
 	display: flex;
