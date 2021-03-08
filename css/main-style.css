@@ -7,21 +7,25 @@
 	background: grey;
 }
 .header {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 	width: 100%;
-	height: 80px;
+	height: fit-content;
 }
 .settings{
-	width: 100%;
+	font-size: 30px;
+	margin: 0 20px;
 }
+@media only screen and (max-width:300px){
+	.settings{
+		font-size: 80px;
+	}
+}
+
 .bi-gear{
-	transform: scale(1.5);
+	float: left;
 	transition: all 0.2s linear;
-	position: relative;
-	left: 20px;
+	transform:scale(1.5);
 }
+
 .path.color{
 	color: white;
 }
@@ -29,10 +33,10 @@
 	transform:scale(1.5) rotate(90deg);
 }
 .bi-person-circle{
-	transform: scale(1.5);
-	position: absolute;
-	right: 20px;
+	float:right;
+	transform:scale(1.5);
 }
+
 
 
 .container-box{
