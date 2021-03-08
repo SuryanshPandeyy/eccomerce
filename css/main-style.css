@@ -11,30 +11,28 @@
 	height: fit-content;
 }
 .settings{
-	font-size: 30px;
+	font-size: 50px;
 	margin: 0 20px;
 }
-@media only screen and (max-width:300px){
+@media only screen and (max-width:550px){
 	.settings{
-		font-size: 80px;
+		font-size: 30px;
 	}
 }
 
 .bi-gear{
 	float: left;
 	transition: all 0.2s linear;
-	transform:scale(1.5);
 }
 
 .path.color{
 	color: white;
 }
 .bi-gear.rotate{
-	transform:scale(1.5) rotate(90deg);
+	transform: rotate(90deg);
 }
 .bi-person-circle{
 	float:right;
-	transform:scale(1.5);
 }
 
 
@@ -82,7 +80,7 @@
 	margin: 15% auto 15% auto;
 	/* 5% from the top, 15% from the bottom and centered */
 	border: 1px solid #888;
-	width: 30%;
+	width: fit-content;
 	/* Could be more or less, depending on screen size */
 }
 
