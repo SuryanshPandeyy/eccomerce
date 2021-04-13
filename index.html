@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>E-Commerce Website</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>E-Commerce Website</title>
 	<link rel="stylesheet" type="text/css" href="css/main-style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -64,17 +64,26 @@
 						<label for="psw"><b>Password</b></label>
 						<input type="password" placeholder="Enter Password" name="psw" required>
 			
-						<button type="submit">Login</button>
+						<button style="user-select: none;" type="submit">Login</button>
 						<label>
-							<input type="checkbox" checked="checked" name="remember"> Remember me
+							<input type="checkbox" name="remember"> Remember me
 						</label>
 					</div>
-			
-					<div class="container-form" style="background-color:#f1f1f1">
-						<span class="psw">Forgot <a href="#">password?</a></span>
-					</div>
+					<span style="user-select: none;" class="psw">Forgot <a href="#">password?</a></span>
 				</form>
 			</div>
+	</div>
+
+	<div class="main-body">
+		<div class="logo">
+			<img src="images/cold-drink.svg" alt="logo" class="img-logo">
+		</div>
+		<a href="shop.html" class="shop">
+		<div class="title">
+				<span>Start Shopping</span>
+				<i class="bi bi-arrow-right"></i>
+		</div>
+		</a>
 	</div>
 
 	<script src="js/main-function.js"></script>

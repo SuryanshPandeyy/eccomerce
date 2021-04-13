@@ -12,7 +12,7 @@ $('.toggle3').click(function () {
 });
 $('.toggle1').click(function () {
     $('.body').toggleClass('color');
-    $('.path').toggleClass('color');
+    $('.bi').toggleClass('color');
 });
 // Get the modal
 var modal = document.getElementById('id01');
