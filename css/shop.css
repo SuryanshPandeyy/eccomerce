@@ -54,6 +54,10 @@ body {
         grid-gap: 2rem 0rem;
         grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     }
+    .box{
+        width: 15rem;
+        height: 15rem;
+    }
 }
 
 .box img {
