@@ -1,7 +1,8 @@
-body{
+body {
     background: linear-gradient(to right, rgb(88, 197, 243), rgb(184, 184, 198));
 }
-.container{
+
+.container {
     width: 100%;
     display: grid;
     position: relative;
@@ -11,7 +12,8 @@ body{
     margin: 2rem auto;
     grid-gap: 2rem 1rem;
 }
-.box{
+
+.box {
     position: relative;
     width: 25rem;
     height: 20rem;
@@ -24,7 +26,8 @@ body{
     cursor: pointer;
     transition: .2s linear;
 }
-.box:before{
+
+.box:before {
     content: '';
     background: rgba(255, 255, 255, 0.19);
     backdrop-filter: blur(.5rem);
@@ -40,18 +43,22 @@ body{
     height: 100%;
     z-index: 0;
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.08);
 }
+
 @media (max-width: 576px) {
-    .container{
+    .container {
         grid-gap: 2rem 5rem;
     }
-    .box{
+
+    .box {
         width: 80%;
     }
 }
-.box img{
+
+.box img {
     z-index: 1;
 }
 
@@ -80,25 +87,28 @@ body{
     color: rgb(0, 0, 0, 10);
 }
 
-.menus{
+.menus {
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 4rem 0;
-    
+
 }
-.menus a{
+
+.menus a {
     text-decoration: none;
     margin: 0 2.5rem;
     color: white;
-    padding:0.5rem 1.2rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 1rem;
- }
-.menus a:hover{
+}
+
+.menus a:hover {
     background-color: orange;
     color: white;
 }
+
 /* The side navigation menu */
 .sidenav {
     height: 100%;
@@ -146,7 +156,7 @@ body{
     margin-left: 5rem;
 }
 
-span>.fa{
+span>.fa {
     font-size: 3rem;
     margin: 20px;
 }
@@ -166,7 +176,8 @@ span>.fa{
     display: flex;
     justify-content: center;
 }
-.banner2{
+
+.banner2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -175,16 +186,19 @@ span>.fa{
     background: rgba(255, 255, 255, 0.703);
     padding: 1rem;
 }
-.banner-name{
+
+.banner-name {
     font-size: 2.5rem;
     margin: 2rem;
     justify-self: flex-start;
 }
+
 .logo {
     position: relative;
     width: fit-content;
     justify-self: flex-end;
 }
+
 .logo img {
     width: 17rem;
 }
