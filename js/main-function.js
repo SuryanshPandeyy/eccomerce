@@ -25,7 +25,7 @@ modal.addEventListener('click', function (event) {
         modal.style.display = "none";
         gear.classList.remove('rotate');
     }
-}) 
+});
 
 // Get the modal
 var modal2 = document.getElementById('id02');
@@ -35,4 +35,28 @@ modal2.addEventListener('click', function (event2) {
     if (event2.target == modal2) {
         modal2.style.display = "none";
     }
-}) 
+});
+
+let bigbox = document.querySelector(".main-body");
+let box = document.querySelector(".logo");
+let image = document.querySelector(".img-logo");
+
+
+
+    bigbox.addEventListener("mousemove", (e) => {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+        box.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    });
+
+
+    bigbox.addEventListener("mouseenter", (e) => {
+        box.style.transition = "none";
+        image.style.transform = "translateZ(150px) rotateZ(25deg)";
+    });
+
+    bigbox.addEventListener("mouseleave", (e) => {
+        box.style.transition = "all 0.5s ease";
+        box.style.transform = "rotateY(0deg) rotateX(0deg)";
+        image.style.transform = "translateZ(0px) rotateZ(0deg)";
+    });
